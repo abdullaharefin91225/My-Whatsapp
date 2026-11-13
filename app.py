@@ -9,9 +9,9 @@ app = Flask(__name__)
 # সব Key এখন Render থেকে আসবে, কোডে লেখা থাকবে না
 WHATSAPP_TOKEN = os.environ.get("WHATSAPP_TOKEN")
 PHONE_NUMBER_ID = os.environ.get("PHONE_NUMBER_ID")
-VERIFY_TOKEN = os.environ.get("VERIFY_TOKEN", "soulmate91225")
-WIFE_NUMBER = os.environ.get("WIFE_NUMBER", "8801992619083")
-MY_NUMBER = os.environ.get("MY_NUMBER", "8801400415585")
+VERIFY_TOKEN = os.environ.get("VERIFY_TOKEN")
+WIFE_NUMBER = os.environ.get("WIFE_NUMBER")
+MY_NUMBER = os.environ.get("MY_NUMBER")
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 
 client = OpenAI(api_key=OPENAI_API_KEY) if OPENAI_API_KEY else None
